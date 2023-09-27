@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('khs_details', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->char('kode_khs_detail', 8);
+            $table->char('kode_khs', 8);
+            $table->integer('nilai');
         });
     }
 

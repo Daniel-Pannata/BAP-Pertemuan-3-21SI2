@@ -12,8 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('terms', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->text('kode_term');
+            $table->char('tahun_ajaran', 4);
+            $table->char('semester', 10);
+            $table->text('keterangan');
+            $table->char('keterangan_singkat', 100);
         });
     }
 
