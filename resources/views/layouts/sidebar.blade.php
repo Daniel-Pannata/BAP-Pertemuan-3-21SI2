@@ -57,6 +57,24 @@
                   <p>Mahasiswa</p>
                 </a>
             </li>
+            <li class="nav-item">
+              <a href="/pembayaran" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Pembayaran</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/program_studi" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Program Studi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/transkrip_akademik" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Transkrip Akademik</p>
+              </a>
+            </li>
 
         </nav>
         <!-- /.sidebar-menu -->
