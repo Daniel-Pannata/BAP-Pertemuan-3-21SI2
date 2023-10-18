@@ -67,5 +67,30 @@ class taskSeeder extends Seeder
             'nilai'=>100],
         ]
         );
+    DB::table('khs_details')->insert([
+            ['kode_khs_detail'=>'khs001', 
+            'kode_khs'=>'khs001',
+            'nilai'=>100],
+            ['kode_khs_detail'=>'khs002', 
+            'kode_khs'=>'khs002',
+            'nilai'=>100],
+            ['kode_khs_detail'=>'khs003', 
+            'kode_khs'=>'khs003',
+            'nilai'=>100],
+        ]
+        );
+    DB::table('program_studi')->insert([
+        ['nama'=>' Teknik Informatika', 
+        'Deskripsi'=>'Program studi Teknik Informatika fokus pada pengembangan perangkat lunak, sistem informasi, dan teknologi komputer'],
+        ['nama'=>' Manajemen Bisnis', 
+        'Deskripsi'=>'Program studi Manajemen Bisnis membekali mahasiswa dengan pengetahuan tentang manajemen, keuangan, pemasaran, dan operasi bisnis.'],
+        ['nama'=>' Akuntansi', 
+        'Deskripsi'=>'Program studi Akuntansi fokus pada pelaporan keuangan, analisis keuangan, dan perpajakan.'],
+        ['nama'=>' Arsitektur', 
+        'Deskripsi'=>'Program studi Arsitektur membekali mahasiswa dengan pengetahuan dan keterampilan dalam merancang dan merencanakan bangunan dan lingkungan.'],
+        ['nama'=>' Manajemen Perhotelan', 
+        'Deskripsi'=>'Program studi Manajemen Perhotelan mempersiapkan mahasiswa untuk mengelola operasi hotel dan bisnis perhotelan.'],
+        ]
+        );
     }
 }
