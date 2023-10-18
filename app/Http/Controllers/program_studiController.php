@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\mahasiswa;
+use App\Models\program_studi;
 
-class mahasiswaController extends Controller
+class program_studiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,8 @@ class mahasiswaController extends Controller
     public function index()
     {
         //
-        $mahasiswas = mahasiswa::where('id','>', 90)->get();
-        return view('mahasiswa')->with('mahasiswas', $mahasiswas);
+        $program_studis = program_studi::get();
+        return view('program_studi')->with('program_studis', $program_studis);
     }
 
     /**
@@ -64,4 +64,5 @@ class mahasiswaController extends Controller
     {
         //
     }
+
 }

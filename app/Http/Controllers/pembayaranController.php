@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\mahasiswa;
+use App\Models\pembayaran;
 
-class mahasiswaController extends Controller
+class pembayaranController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,8 @@ class mahasiswaController extends Controller
     public function index()
     {
         //
-        $mahasiswas = mahasiswa::where('id','>', 90)->get();
-        return view('mahasiswa')->with('mahasiswas', $mahasiswas);
+        $pembayarans = pembayaran::get();
+        return view('pembayaran')->with('pembayarans', $pembayarans);
     }
 
     /**
